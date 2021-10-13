@@ -1,0 +1,439 @@
+﻿<!DOCTYPE html>
+<html>
+
+		<head>
+			
+			<title>Movies</title>
+			
+				<!--
+				Project Name:	Theatre
+				File Name:	movies.html
+				Authors: Katie King, Haley Carver, Dillan Blankenship 
+				Date:	5/1/18
+				-->
+				
+			<link rel="stylesheet" href="styles.css">
+			
+			<style>
+				* {box-sizing: border-box}
+				body {font-family: Verdana, sans-serif; margin:0}
+				.mySlides {display: none}
+				img {vertical-align: middle;}
+				
+				.slideshow-container {
+					max-width: 1000px;
+					position: relative;
+					margin: auto;
+				}
+
+				.prev, .next {
+					cursor: pointer;
+					position: absolute;
+					top: 50%;
+					width: auto;
+					padding: 16px;
+					margin-top: -22px;
+					color: white;
+					font-weight: bold;
+					font-size: 18px;
+					transition: 0.6s ease;
+					border-radius: 0 3px 3px 0;
+				}
+
+				.next {
+					right: 0;
+					border-radius: 3px 0 0 3px;
+				}
+
+				.prev:hover, .next:hover {
+					background-color: rgba(0,0,0,0.8);
+				}
+				
+				.text {
+					color: #f2f2f2;
+					font-size: 15px;
+					padding: 8px 12px;
+					position: absolute;
+					bottom: 8px;
+					width: 100%;
+					text-align: center;
+				}
+
+				.numbertext {
+					color: #f2f2f2;
+					font-size: 12px;
+					padding: 8px 12px;
+					position: absolute;
+					top: 0;
+				}
+				
+				.dot {
+					cursor: pointer;
+					height: 15px;
+					width: 15px;
+					margin: 0 2px;
+					background-color: #bbb;
+					border-radius: 50%;
+					display: inline-block;
+					transition: background-color 0.6s ease;
+				}
+
+				.active, .dot:hover {
+					background-color: #717171;
+				}
+
+				.fade {
+					-webkit-animation-name: fade;
+					-webkit-animation-duration: 1.5s;
+					animation-name: fade;
+					animation-duration: 1.5s;
+				}
+
+				@-webkit-keyframes fade {
+					from {opacity: .4} 
+					to {opacity: 1}
+				}
+
+				@keyframes fade {
+					from {opacity: .4} 
+					to {opacity: 1}
+				}
+
+				@media only screen and (max-width: 300px) {
+					.prev, .next,.text {font-size: 11px}
+				}
+				
+	li {
+		float: right;
+		width: 65%;
+	}
+	ol {
+		float: center;
+		font-size: 40px;
+	}
+	ul {
+		margin-left: 100px;
+		margin-bottom: 50px;
+		font-size: 30px;
+	}
+</style>
+		</head>
+		
+		<body>
+			
+			<h1 id="top">Movies</h1>
+			
+			<br />
+			
+				<a href="index.html"><button onclick="myFunction()">Home Page</button></a>
+			
+				<a href="movies.html"><button onclick="myFunction()">Movies</button></a>
+		
+				<a href="about.html"><button onclick="myFunction()">About The Team</button></a>
+				
+					<a href="#aiw"><button class="bl">Avengers: Infinity War</button></a>
+					
+					<a href="#bp"><button class="bl">Black Panther</button></a>
+					
+					<a href="#rpo"><button class="bl">Ready Player One</button></a>
+					
+					<a href="#sasws"><button class="bl">Solo: A Star Wars Story</button></a>
+					
+					<a href="#dp2"><button class="bl">Deadpool 2</button></a> 
+					
+					<a href="#iod"><button class="bl">Isle Of Dogs</button></a>
+					
+					<a href="#amatw"><button class="bl">Ant Man And The Wasp</button></a>
+					
+					<a href="#s"><button class="bl" style="font-family: viner hand itc;">Sources</button></a>
+					
+					
+					<div class="slideshow-container">
+
+						<div class="mySlides fade">
+						
+							<div class="numbertext">1 / 7</div>
+
+								<div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+							
+									<img src="Assets/aiw.jpg" style="width:100%">
+
+									Showtimes: 12:45pm | 2:55pm | 4:05pm | 7:25pm | 9:40pm | 10:45pm
+								
+								</div>
+
+							</div>
+
+						<div class="mySlides fade">
+						
+							<div class="numbertext">2 / 7</div>
+
+								<div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+							
+									<img src="Assets/bp.jpg" style="width:100%">
+
+									Showtimes: 1:25pm | 4:20pm | 7:15pm | 10:20pm
+								
+								</div>
+
+							</div>
+
+						<div class="mySlides fade">
+						
+							<div class="numbertext">3 / 7</div>
+
+								<div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+							
+									<img src="Assets/rpo.jfif" style="width:100%">
+
+									Showtimes: 7:00pm | 10:05pm
+								
+								</div>
+
+							</div>
+
+						<div class="mySlides fade">
+						
+							<div class="numbertext">4 / 7</div>
+
+								<div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+							
+									<img src="Assets/ssw.jfif" style="width:100%">
+
+									Showtimes: 7:00pm | 9:15pm | 10:00pm
+								
+								</div>
+
+							</div>
+
+						<div class="mySlides fade">
+						
+							<div class="numbertext">5 / 7</div>
+
+								<div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+							
+									<img src="Assets/d2.jpg" style="width:100%">
+
+									Showtimes: 12:20pm | 7:45pm
+								
+								</div>
+
+							</div>
+
+						<div class="mySlides fade">
+						
+							<div class="numbertext">6 / 7</div>
+
+								<div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+							
+									<img src="Assets/iod.jpg" style="width:100%">
+
+									Showtimes: 12:20pm | 7:45pm
+								
+								</div>
+
+							</div>
+
+						<div class="mySlides fade">
+						
+							<div class="numbertext">7 / 7</div>
+
+								<div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+							
+									<img src="Assets/amatw.jfif" style="width:100%">
+									
+									Premiere Date: July 6, 2018
+								
+								</div>
+
+							</div>
+
+								<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+								
+								<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+					</div>
+				<br>
+
+					<div style="text-align:center">
+					
+						<span class="dot" onclick="currentSlide(1)"></span> 
+						
+						<span class="dot" onclick="currentSlide(2)"></span> 
+						
+						<span class="dot" onclick="currentSlide(3)"></span>
+						
+						<span class="dot" onclick="currentSlide(4)"></span>
+						
+						<span class="dot" onclick="currentSlide(5)"></span>
+						
+						<span class="dot" onclick="currentSlide(6)"></span>
+						
+						<span class="dot" onclick="currentSlide(7)"></span>  
+						
+					</div>
+
+				<script>
+					var slideIndex = 1;
+						showSlides(slideIndex);
+
+					function plusSlides(n) {
+						showSlides(slideIndex += n);
+					}
+
+					function currentSlide(n) {
+						showSlides(slideIndex = n);
+					}
+
+					function showSlides(n) {
+						var i;
+						var slides = document.getElementsByClassName("mySlides");
+						var dots = document.getElementsByClassName("dot");
+						if (n > slides.length) {slideIndex = 1}    
+						if (n < 1) {slideIndex = slides.length}
+						for (i = 0; i < slides.length; i++) {
+							slides[i].style.display = "none";  
+						}
+							for (i = 0; i < dots.length; i++) {
+								dots[i].className = dots[i].className.replace(" active", "");
+							}
+								slides[slideIndex-1].style.display = "block";  
+								dots[slideIndex-1].className += " active";
+					}
+				</script>
+				
+				
+
+					<ol>
+						<li id="aiw">Avengers: Infinity War-</li> 
+			
+							<ul>
+								
+								<li>Iron Man, Thor, the Hulk and the rest of the Avengers unite to battle their most 
+								powerful enemy yet -- the evil Thanos. On a mission to collect all six Infinity Stones, Thanos plans to use 
+								the artifacts to inflict his twisted will on reality. The fate of the planet and existence itself has never 
+								been more uncertain as everything the Avengers have fought for has led up to this moment.</li>
+								
+							</ul>
+							
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/6ZfuNTqbHE8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					
+						<li id="bp">Black Panther-</li>
+							
+							<ul>
+							
+								<li>After the death of his father, T'Challa returns home to the African nation of Wakanda to 
+								take his rightful place as king. When a powerful enemy suddenly reappears, T'Challa's mettle as king -- 
+								and as Black Panther -- gets tested when he's drawn into a conflict that puts the fate of Wakanda and the 
+								entire world at risk. Faced with treachery and danger, the young king must rally his allies and release the 
+								full power of Black Panther to defeat his foes and secure the safety of his people.</li>
+								
+							</ul>
+							
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/xjDjIWPwcPU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					
+						<li id="rpo">Ready Player One-</li>
+						
+							<ul>
+						
+								<li>Welcome to the OASIS, a hyper-realistic, 3D, videogame paradise. It's 2045, and pretty 
+								much everyone logs in to the OASIS daily to escape their terrible lives, lives affected by overpopulation, 
+								unemployment, and energy shortages. Eighteen-year-old Wade Watts is one of these people, and he has a mission: 
+								to find an Easter egg hidden inside the OASIS by its wackadoodle creator, James Halliday.
+								In order to get to the egg, a player must first find three keys and unlock three gates. Wade—playing as his 
+								avatar, Parzival—finds the first key, the Copper Key, inside the Tomb of Horrors. There he also meets Art3mis, 
+								a young blogger with a sexy, shapely avatar that catches Wade's eye. Ooh-la-la the flirtmance begins.</li>
+								
+							</ul>
+							
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/ixWL1BWi44U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					
+						<li id="sasws">Solo: A Star Wars Story-</li>						
+						
+						<ul>
+						
+							<li>Through a series of daring escapades, young Han Solo meets his future co-pilot 
+							Chewbacca and encounters the notorious gambler Lando Calrissian.</li>
+							
+						</ul>
+						
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/jPEYpryMp2s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					
+						<li id="dp2">Deadpool 2-</li>
+						
+						<ul>
+						
+							<li>Wade Wilson (Ryan Reynolds) is a former Special Forces operative who now works as a mercenary. 
+							His world comes crashing down when evil scientist Ajax (Ed Skrein) tortures, disfigures and transforms him 
+							into Deadpool. The rogue experiment leaves Deadpool with accelerated healing powers and a twisted sense of 
+							humor. With help from mutant allies Colossus and Negasonic Teenage Warhead (Brianna Hildebrand), Deadpool 
+							uses his new skills to hunt down the man who nearly destroyed his life.</li>
+							
+						</ul>
+						
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/D86RtevtfrA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					
+						<li id="iod">Isle of Dogs-</li>						
+						
+						<ul>
+						
+							<li>When, by executive decree, all the canine pets of Megasaki City are exiled to a vast 
+							garbage-dump called Trash Island, 12-year-old Atari sets off alone in a miniature Junior-Turbo Prop 
+							and flies across the river in search of his bodyguard-dog, Spots. There, with the assistance of a pack 
+							of newly-found mongrel friends, he begins an epic journey that will decide the fate and future of the 
+							entire Prefecture.</li>
+							
+						</ul>
+						
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/dt__kig8PVU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					
+						<li id="amatw">Ant-Man and the Wasp-</li>				
+						
+							<ul>
+						
+								<li>Scott Lang is grappling with the consequences of his choices as both a superhero and a father. Approached by Hope van Dyne and Dr. Hank Pym, 
+								Lang must once again don the Ant-Man suit and fight alongside the Wasp. The urgent mission soon leads to secret revelations from the past as the dynamic 
+								duo finds itself in an epic battle against a powerful new enemy.</li>
+								
+							</ul>
+							
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/UUkn-enk2RU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						
+					</ol>
+					
+						<h2 id="s">Sources:</h2>
+							
+
+						<p style="text-align: center; font-family: chaparral pro light;">We got the movie summary from Wikipedia. <br />
+						Picture on this page was from Google.<br />
+						Videos are from Youtube.</p>
+
+						<br />
+						
+						<br />
+					
+				<footer> &copy; 2018 | Katie King, Haley Carver, Dillan Blankenship | <img src="Assets/mask.jpg" width="40px" alt="WedHeads' logo"> | <a href="#top"> Back to the Top</a></footer>
+			
+				<script>
+			
+			function myFunction() {
+			
+				var txt;
+				
+				if (confirm("Are you sure you want to leave this page?")) {
+				
+				} else {
+				
+				txt = "You canceled your action.";
+				
+				}
+				
+				document.getElementById("demo").innerHTML = txt;
+				
+			}
+			
+			</script>
+			
+		</body>
+		
+</html>

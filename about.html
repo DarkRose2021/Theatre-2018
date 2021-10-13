@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+		<head>
+			
+			<title>About the Team</title>
+			
+				<!--
+				Project Name:	Theatre
+				File Name:	movies.html
+				Authors: Katie King, Haley Carver, Dillan Blankenship 
+				Date:	5/1/18
+				-->
+				<link rel="stylesheet" href="styles.css">
+				
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+				
+				<style>
+				
+					div {
+						background-color: #edb73b;
+						color: #878787;
+					}
+					
+				</style>
+				
+		</head>
+		
+		<body>
+		
+			<h1 style="text-align: center; font-family: Agency FB;">About WebHeads</h1>
+			
+				<a href="index.html"><button onclick="myFunction()">Home Page</button></a>
+			
+				<a href="movies.html"><button onclick="myFunction()">Movies</button></a>
+		
+				<a href="about.html"><button onclick="myFunction()">About The Team</button></a>
+			
+				<dl>
+				
+					<dt onclick="typeWriter()"><abbr title="Click Me!">WebHeads</abbr></dt>
+					
+					<img src="Assets/mask.jpg" width="295px" alt="WedHeads' logo"  style="margin-left: 50px;">  <img src="Assets/gp.jpg" width="295px" alt="WedHeads' team" style="margin-left: 300px;">
+					
+						<dd id="demo">
+						
+							<div>Email: <a href="mailto:webheads@gmail.com">WebHeads email</a>
+						
+								<br />
+							
+								<a href="http://facebook.com" class="fa fa-facebook"></a>
+							
+								<a href="http://twitter.com/WebHeadsCo" class="fa fa-twitter"></a></div></dd>
+				
+					<dt>Katie King</dt>
+					
+					<img src="Assets/kk.jpg" width="295px" alt="Team Leader" style="margin-left: 50px;">
+					
+						<dd><div>Email: <a href="mailto:kathrine.king@stu.allen.kyschools.us">Katie's email</a></div>
+						
+						<br />
+						
+						The CSS specialist. She worked on making the website eye-catching and professional-looking. She also experimented with JavaScript. She is the leader of our company. </dd>
+						
+					<dt>Haley Carver</dt>
+					
+					<img src="Assets/hc.jpg" width="295px" alt="Content maker" style="margin-left: 50px;">
+					
+						<dd><div>Email: <a href="mailto:haley.carver@stu.allen.kyschools.us">Haley's email</a></div>
+						
+						<br />
+						
+						She found the movies and the descriptions. She kept us on track. Helped with JavaScript. She worked on most of the content for our website. She also did the layout for most of the pages.</dd>
+						
+					<dt>Dillan Blankenship</dt>
+					
+					<img src="Assets/db.jpg" width="295px" alt="Photoshop Worker" style="margin-left: 50px;">
+					
+						<dd><div>Email: <a href="mailto:dillan.blankenship@stu.allen.kyschools.us">Dillan's email</a></div>
+						
+						<br />
+						
+						He specializes in Photoshop. He created the logo for both the company and the theatre. He also created the layout of the building. He also helped with the JavaScript and CSS. He created our company logo. 
+						</dd>
+				
+				</dl>
+				
+				<br />
+				
+				<br />
+				
+				<br />
+				
+				
+			<footer> &copy; 2018 | Katie King, Haley Carver, Dillan Blankenship | <img src="Assets/mask.jpg" width="40px" alt="WedHeads' logo"> | <a href="#top"> 
+			Back to the Top</a></footer>
+			
+				<script>
+			
+			function myFunction() {
+			
+				var txt;
+				
+				if (confirm("Are you sure you want to leave this page?")) {
+				
+				} else {
+				
+				txt = "You canceled your action.";
+				
+				}
+				
+				document.getElementById("demo").innerHTML = txt;
+				
+			}
+			
+			</script>
+			
+			<script>
+					var i = 0;
+					var txt = 'Our company makes websites for people. We are based at 327 E Pascagoula St., Missippi. This is our first website as a team. We plan on making lots more websites in the future.';
+					var speed = 50;
+
+					function typeWriter() {
+					if (i < txt.length) {
+					document.getElementById("demo").innerHTML += txt.charAt(i);
+					i++;
+					setTimeout(typeWriter, speed);
+					}
+				}
+			</script>
+			
+		</body>
+		
+</html>
